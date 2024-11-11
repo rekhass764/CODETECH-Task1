@@ -1,10 +1,15 @@
 # CODETECH-Task1
 
 Name:Rekha S S
+
 Company:CODETECH IT SOLUTIONS
+
 ID:CT08DS9110
+
 Domain:C++ PROGRAMMING
+
 Duration:October to November 2024
+
 Mentor:Neela Santhosh Kumar
 
 Overview of the Project
