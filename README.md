@@ -19,6 +19,7 @@ Project: QUIZ GAME
 
 
 Objective
+
 The primary goal of this quiz game is to create an interactive learning experience where users can answer multiple-choice questions, receive immediate feedback, and track their score. It is designed as a fun and educational tool to test knowledge across various topics in a simple, engaging way.
 
 
