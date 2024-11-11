@@ -1,0 +1,65 @@
+/*TASK ONE: QUIZ GAME*/
+
+
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+// Function to display a question and get the answer
+bool askQuestion(const string& question, char correctAnswer) {
+    char userAnswer;
+    cout << question << endl;
+    cout << "Your answer: ";
+    cin >> userAnswer;
+    userAnswer = tolower(userAnswer); // Converting  to lowercase f
+
+    if (userAnswer == correctAnswer) {
+        cout << "That's correct! Great job!" << endl;
+        return true; // Return true for a correct answer
+    } else {
+        cout << "Oops, that's incorrect. The correct answer was " << correctAnswer << "." << endl;
+        return false; // Return false for an incorrect answer
+    }
+}
+
+// Function to display final score and feedback
+void showResults(int score, int totalQuestions) {
+    cout << "\nQuiz Over! You scored " << score << " out of " << totalQuestions << "." << endl;
+
+    if (score == totalQuestions) {
+        cout << "Awesome! You got every question right. You're a quiz master!" << endl;
+    } else if (score >= totalQuestions / 2) {
+        cout << "Good job! You got most of them. Keep it up, and you’ll get them all next time." << endl;
+    } else {
+        cout << "It’s alright; quizzes can be tough. Review a bit, and you'll improve for sure!" << endl;
+    }
+}
+
+int main() {
+    int score = 0;
+
+    // Array of questions and answers
+    string questions[] = {
+        "What is the capital of France?\n(a) Berlin\n(b) London\n(c) Paris\n(d) Madrid",
+        "Which planet is known as the Red Planet?\n(a) Earth\n(b) Mars\n(c) Venus\n(d) Jupiter",
+        "Who wrote 'Hamlet'?\n(a) Charles Dickens\n(b) William Shakespeare\n(c) J.K. Rowling\n(d) Mark Twain"
+    };
+    char answers[] = {'c', 'b', 'b'};
+    int numQuestions = sizeof(questions) / sizeof(questions[0]);
+
+    cout << "Welcome to the Quiz Game! Try your best to answer the questions." << endl;
+
+    // Quiz loop
+    for (int i = 0; i < numQuestions; i++) {
+        cout << "\nQuestion " << (i + 1) << ":" << endl;
+        if (askQuestion(questions[i], answers[i])) {
+            score++; // Increment score if the answer is correct
+        }
+    }
+
+    
+    showResults(score, numQuestions);
+
+    return 0;
+}
