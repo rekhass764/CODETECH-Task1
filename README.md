@@ -15,6 +15,8 @@ Mentor:Neela Santhosh Kumar
 Overview of the Project
 
 Project: QUIZ GAME
+![Screenshot 2024-11-11 150710](https://github.com/user-attachments/assets/636988f1-bda5-4c0f-88b0-0ffffebdf252)
+
 
 Objective
 The primary goal of this quiz game is to create an interactive learning experience where users can answer multiple-choice questions, receive immediate feedback, and track their score. It is designed as a fun and educational tool to test knowledge across various topics in a simple, engaging way.
